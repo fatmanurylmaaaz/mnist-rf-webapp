@@ -221,7 +221,7 @@ mnist-rf-webapp/
     ├── prediction-results.png
     ├── training-output.png
     ├── model-analysis.png
-    └── random-forest-diagram.png
+    └── random-forest-diagram.jpg
 ```
 
 ---
