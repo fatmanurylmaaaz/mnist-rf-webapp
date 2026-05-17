@@ -6,7 +6,7 @@ Handwritten digit recognition web application built with **Random Forest** and t
 
 ## 🚀 Project Overview
 
-This project is a machine learning based web application that recognizes handwritten digits drawn by the user.
+This project is a machine learning-based web application that recognizes handwritten digits drawn by the user.
 
 The model was trained using the real **MNIST handwritten digit dataset** and integrated into a web interface created with Streamlit.
 
@@ -59,6 +59,59 @@ Dataset details:
 | Max Depth | 25 |
 | Test Accuracy | 96.89% |
 | Input Size | 28x28 |
+
+---
+
+## 🔍 How It Works
+
+```text
+User Drawing
+      ↓
+Image Preprocessing
+      ↓
+Cropping & Centering
+      ↓
+28x28 MNIST Formatting
+      ↓
+Random Forest Prediction
+      ↓
+Streamlit Interface Output
+```
+
+---
+
+## 🌲 How Random Forest Works
+
+Random Forest is an ensemble machine learning algorithm that combines multiple decision trees to improve prediction accuracy.
+
+In this project:
+
+1. Each handwritten digit image is converted into 784 pixel features.
+2. Multiple decision trees analyze the pixel patterns.
+3. Each tree predicts a digit independently.
+4. The final prediction is determined by majority voting.
+
+![Random Forest Diagram](images/random-forest-diagram.png)
+
+### 🧠 Key Insight
+
+Random Forest reduces overfitting by averaging multiple decision trees.
+
+### Random Forest Workflow
+
+```text
+Input Image
+     ↓
+Pixel Features (784)
+     ↓
+Multiple Decision Trees
+     ↓
+Individual Predictions
+     ↓
+Majority Voting
+     ↓
+Final Digit Prediction
+```
 
 ---
 
@@ -151,6 +204,28 @@ Then open the local URL shown in the terminal.
 
 ---
 
+## 📁 Project Structure
+
+```text
+mnist-rf-webapp/
+│
+├── .gitignore              # Git ignore rules
+├── app.py                  # Streamlit web application
+├── model_train.py          # Model training script
+├── requirements.txt        # Python dependencies
+├── README.md               # Project documentation
+│
+└── images/                 # Project screenshots
+    ├── main-interface.png
+    ├── prediction-example.png
+    ├── prediction-results.png
+    ├── training-output.png
+    ├── model-analysis.png
+    └── random-forest-diagram.png
+```
+
+---
+
 ## 📷 Screenshots
 
 ### Main Interface
@@ -172,47 +247,6 @@ Then open the local URL shown in the terminal.
 ### Confusion Matrix
 
 ![Confusion Matrix](images/model-analysis.png)
-
----
-
-## 📁 Project Structure
-
-```text
-mnist-rf-webapp/
-│
-├── images/
-│   ├── training-output.png
-│   ├── main-interface.png
-│   ├── prediction-example.png
-│   ├── prediction-results.png
-│   └── model-analysis.png
-│
-├── app.py
-├── model_train.py
-├── requirements.txt
-├── mnist_rf_model.pkl
-├── model_analysis.png
-├── README.md
-└── venv/
-```
-
----
-
-## 🔍 How It Works
-
-```text
-User Drawing
-      ↓
-Image Preprocessing
-      ↓
-Cropping & Centering
-      ↓
-28x28 MNIST Formatting
-      ↓
-Random Forest Prediction
-      ↓
-Streamlit Interface Output
-```
 
 ---
 
