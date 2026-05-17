@@ -1,0 +1,20 @@
+# .gitignore
+
+# Sanal ortam
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Model dosyaları (GitHub 100MB limit)
+*.pkl
+*.pkl.gz
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
