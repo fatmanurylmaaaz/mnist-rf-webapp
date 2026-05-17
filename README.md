@@ -91,7 +91,7 @@ In this project:
 3. Each tree predicts a digit independently.
 4. The final prediction is determined by majority voting.
 
-![Random Forest Diagram](images/random-forest-diagram.png)
+![Random Forest Diagram](images/random-forest-diagram.jpg)
 
 ### 🧠 Key Insight
 
